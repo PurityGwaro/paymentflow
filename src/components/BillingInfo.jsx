@@ -1,3 +1,4 @@
+import Buttons from "./Buttons"
 
 function BillingInfo() {
   return (
@@ -8,13 +9,13 @@ function BillingInfo() {
         </div>
         <div className="form-group">
             <label htmlFor="lastName">Card Type</label>
-            <input type="text" className="form-control" id="cardtype" placeholder="Visa" required/>
+            <input type="text" className="form-control" id="cardType" placeholder="Visa" required/>
         </div>
         <div className="card-details">
                 {/* card details */}
             <div className="form-group">
-                <label htmlFor="cardnumber">Card Number</label>
-                <input type="text" className="form-control" id="cardnumber" placeholder="1234 5678 9012 3456" required/>
+                <label htmlFor="card">Card Details</label>
+                <input type="text" className="form-control" id="card" placeholder="1234 5678 9012 3456" required/>
             </div>
             {/* input date of expiry */}
             <div className="form-group">
@@ -28,11 +29,7 @@ function BillingInfo() {
                 <input type="text" className="form-control" id="cvv" placeholder="123" required/>
             </div>
         </div>
-        <div className="buttons">
-                {/* button next and cancel payment */}
-            <button className="btn">next</button>
-            <button className="btn">cancel payment</button>
-        </div>
+        <Buttons/>
     </form>
   )
 }

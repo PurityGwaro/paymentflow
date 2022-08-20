@@ -1,3 +1,4 @@
+import Buttons from "./Buttons"
 
 function ConfirmPayment() {
   return (
@@ -26,11 +27,7 @@ function ConfirmPayment() {
                 </tr>
             </tbody>
         </table>
-        <div className="buttons">
-                {/* button next and cancel payment */}
-            <button className="btn">next</button>
-            <button className="btn">cancel payment</button>
-        </div>
+        <Buttons/>
     </div>
   )
 }

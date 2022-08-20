@@ -1,29 +1,30 @@
+import Buttons from "./Buttons"
 
 function PersonalInfo() {
   return (
     <form>
         <div className="form-group">
-            <label htmlFor="firstName">First Name</label>
-            <input type="text" className="form-control" id="firstName" placeholder="First Name" />
+            <label htmlFor="firstName">Name</label>
+            <input type="text" id="name" placeholder="Jane Doe" />
         </div>
         <div className="form-group">
             <label htmlFor="lastName">Email Address</label>
-            <input type="text" className="form-control" id="lastName" placeholder="Last Name" />
+            <input type="text" id="lastName" placeholder="Last Name" />
         </div>
         <div className="form-group">
             <label htmlFor="email">Address 1</label>
-            <input type="email" className="form-control" id="email" placeholder="Email" />
+            <input type="email" id="email" placeholder="Email" />
         </div>
         <div className="form-group">
             <label htmlFor="phone">Address 2</label>
-            <input type="text" className="form-control" id="phone" placeholder="Phone" />
+            <input type="text" id="phone" placeholder="Phone" />
         </div>
         <div className="state">
                 {/* setup country selection  */}
             <div className="form-group">
                 <label htmlFor="country">Local Government</label>
                 {/* input country name */}
-                <input type="text" className="form-control" id="country" placeholder="Country" />
+                <input type="text" id="country" placeholder="Nigeria" />
             </div>
             {/* input state in the selected country
             <div className="form-group">
@@ -42,11 +43,7 @@ function PersonalInfo() {
                 </select>
             </div>  
         </div>
-        <div className="buttons">
-                {/* button next and cancel payment */}
-            <button className="btn">next</button>
-            <button className="btn">cancel payment</button>
-        </div>
+        <Buttons/>
     </form>
   )
 }

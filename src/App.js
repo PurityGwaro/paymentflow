@@ -6,13 +6,16 @@ import PersonalInfo from "./components/PersonalInfo";
 
 function App() {
   return (
-    <>
+    <div className="app">
+      <div>
+        <h2>Complete your Purchase</h2>
+      </div>
       <Navigate />
-      {/* <PersonalInfo /> */}
+      <PersonalInfo />
       {/* <BillingInfo/> */}
       {/* <ConfirmPayment/> */}
-      <Complete/>
-    </>
+      {/* <Complete/> */}
+    </div>
   );
 }
 
