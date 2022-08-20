@@ -27,7 +27,6 @@ function ConfirmPayment() {
                 </tr>
             </tbody>
         </table>
-        <Buttons/>
     </div>
   )
 }

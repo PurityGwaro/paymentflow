@@ -1,17 +1,5 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/product-sans');
 
 * {
   box-sizing: border-box;
@@ -19,24 +7,46 @@ code {
   padding: 0;
 }
 body{
+  margin: 0;
+  font-family: 'Product Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   /* center contents using flex */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   background-color: #fafafa;
-  margin-top: 5rem;
   background-image: url('/public/bg.png');
   background-repeat: no-repeat;
   background-size:cover;
+}
+.app{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 60px;
   list-style: none;
+  margin-top: 1rem;
+  border-bottom: 1px solid #000000;
+}
+.nav li{
+  font-size: 0.9rem;
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: 700;
+  padding: 1rem 0 1rem 0;
+  border-bottom: 5px solid transparent;
+}
+.nav li:hover, .li-active{
+  color:#F2994A;
+  cursor: pointer;
+  border-bottom: 5px solid #F2994A;
+  z-index: 888;
 }
 .form-group{
   display: flex;
@@ -48,7 +58,7 @@ body{
   padding: 1rem;
 }
 .form-group label{
-  font-weight: 600;
+  font-weight: 700;
   color: #000;
 }
 .form-group input{
@@ -59,6 +69,10 @@ body{
   padding: 0.5rem;
   font-size: 1.2rem;
   margin-top: 1rem;
+}
+.email-description{
+  color: #817E9E;
+  margin-top: 0.3rem;
 }
 .state{
   display: flex;

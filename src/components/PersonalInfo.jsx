@@ -9,6 +9,7 @@ function PersonalInfo() {
         </div>
         <div className="form-group">
             <label htmlFor="lastName">Email Address</label>
+            <small className="email-description">The purchase receipt would be sent to this address</small>
             <input type="text" id="lastName" placeholder="Last Name" />
         </div>
         <div className="form-group">
@@ -43,7 +44,6 @@ function PersonalInfo() {
                 </select>
             </div>  
         </div>
-        <Buttons/>
     </form>
   )
 }

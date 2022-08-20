@@ -29,7 +29,6 @@ function BillingInfo() {
                 <input type="text" className="form-control" id="cvv" placeholder="123" required/>
             </div>
         </div>
-        <Buttons/>
     </form>
   )
 }
