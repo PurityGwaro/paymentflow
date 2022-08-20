@@ -1,5 +1,3 @@
-import Buttons from "./Buttons"
-
 function PersonalInfo() {
   return (
     <form>

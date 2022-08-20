@@ -1,11 +1,19 @@
+function Buttons({ step, nextStep, setStep }) {
 
-function Buttons() {
   return (
     <div className="btn-container">
-        <button className="btn1">Next</button>
-        <button className="btn2">Cancel Payment</button>
+        <button type="button" className="btn1" onClick={() => nextStep()}>
+          {step === "payment" ? 'Pay' : 'Next'}
+        </button>
+      <button
+        type="button"
+        className="btn2"
+        onClick={() => setStep("personal")}
+      >
+        Cancel Payment
+      </button>
     </div>
-  )
+  );
 }
 
-export default Buttons
+export default Buttons;
