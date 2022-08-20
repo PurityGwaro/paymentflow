@@ -1,8 +1,17 @@
+import BillingInfo from "./components/BillingInfo";
+import Complete from "./components/Complete";
+import ConfirmPayment from "./components/ConfirmPayment";
+import Navigate from "./components/Navigate";
+import PersonalInfo from "./components/PersonalInfo";
 
 function App() {
   return (
     <>
-      <h1>payment flow</h1>
+      <Navigate />
+      {/* <PersonalInfo /> */}
+      {/* <BillingInfo/> */}
+      {/* <ConfirmPayment/> */}
+      <Complete/>
     </>
   );
 }
