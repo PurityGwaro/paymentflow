@@ -1,16 +1,19 @@
 import BillingInfo from "./BillingInfo"
 import Buttons from "./Buttons"
+import ConfirmPayment from "./ConfirmPayment"
+import Navigate from "./Navigate"
 
 function Stepper() {
   return (
-    <div>
+    <div className="stepper-body">
       <div>
         <h2>Complete your Purchase</h2>
       </div>
-      {/* <Navigate />
+      <Navigate />
+      {/* 
       <PersonalInfo /> */}
-      <BillingInfo/>
-      {/* <ConfirmPayment/> */}
+      {/* <BillingInfo/> */}
+      <ConfirmPayment/>
       {/* <Complete/> */}
       <Buttons/>
     </div>

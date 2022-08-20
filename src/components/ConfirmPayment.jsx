@@ -5,7 +5,7 @@ function ConfirmPayment() {
     <div className="card">
         {/* table with two columns */}
         <table className="table">
-            <thead>
+            <thead  className="table-header">
                 <tr>
                     <th>Item Name</th>
                     <th>N Price</th>

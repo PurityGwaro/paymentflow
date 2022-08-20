@@ -9,7 +9,13 @@ function BillingInfo() {
         </div>
         <div className="form-group">
             <label htmlFor="lastName">Card Type</label>
-            <input type="text" className="form-control" id="cardType" placeholder="Visa" required/>
+            <select className="form-control" id="cardType">
+                <option>Select Card Type</option>
+                <option>Visa</option>
+                <option>MasterCard</option>
+                <option>American Express</option>
+                <option>Discover</option>
+            </select>
         </div>
         <div className="card-details">
                 {/* card details */}

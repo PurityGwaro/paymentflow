@@ -21,7 +21,7 @@ body{
   background-repeat: no-repeat;
   background-size:cover;
 }
-.app{
+.app, stepper-body{
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
@@ -108,3 +108,38 @@ body{
   border: none;
   background: none;
 }
+.card-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.form-group select{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+/* .table{
+  border: 1px solid #817E9E;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+
+}
+.table-header tr{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #2F80ED;
+  border-radius: 16px 10px 0px 0px;
+} */
