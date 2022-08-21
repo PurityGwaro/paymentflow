@@ -204,3 +204,7 @@ stepper-body {
   border-radius: 50%;
   padding: 0.4rem;
 }
+sup{
+  color: #EB5757;
+  margin: 0.3rem;
+}

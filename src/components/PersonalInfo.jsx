@@ -6,7 +6,7 @@ function PersonalInfo() {
             <input type="text" id="name" placeholder="Jane Doe" />
         </div>
         <div className="form-group">
-            <label htmlFor="lastName">Email Address</label>
+            <label htmlFor="lastName">Email Address<sup>*</sup></label>
             <small className="email-description">The purchase receipt would be sent to this address</small>
             <input type="text" id="lastName" placeholder="Last Name" />
         </div>
