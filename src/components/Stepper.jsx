@@ -23,7 +23,7 @@ function Stepper() {
       {step !== "complete" && (
         <>
           <div>
-            <h2>Complete your Purchase</h2>
+            <h2 className="title">Complete your Purchase</h2>
           </div>
           <Navigate step={step} />
         </>
