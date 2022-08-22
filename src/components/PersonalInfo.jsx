@@ -17,8 +17,12 @@ function PersonalInfo() {
         console.log({form});
     }, [form]);
 
+    const handleSubmit = (e) =>{
+        e.preventdefault();
+    }
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
         <div className="form-group">
             <label htmlFor="firstName">Name</label>
             <input type="text" name="name" id="name" placeholder="Jane Doe" value={form.name} onChange={(e) => handleInputChange(e)}/>

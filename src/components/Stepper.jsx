@@ -1,13 +1,17 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import BillingInfo from "./BillingInfo";
 import PersonalInfo from "./PersonalInfo";
 import Complete from "./Complete";
 import Buttons from "./Buttons";
 import ConfirmPayment from "./ConfirmPayment";
 import Navigate from "./Navigate";
+import DetailsContext from "../context/DetailsContext";
 
 function Stepper() {
   const [step, setStep] = useState("personal");
+
+  const details = useContext(DetailsContext);
+  console.log({details});
 
   const nextStep = () => {
     setStep((prev) => {
@@ -19,7 +23,7 @@ function Stepper() {
   };
 
   return (
-    <div className="stepper-body">
+      <div className="stepper-body">
       {step !== "complete" && (
         <>
           <div>
